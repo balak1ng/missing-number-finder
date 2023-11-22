@@ -45,12 +45,18 @@ class MissingNumberFinderTest {
     @Test
     void testFindMissingNumber7() {
         int[] inputArray = new int[]{7, 5, 4, 6};
-        assertEquals(8, MissingNumberFinder.findMissingNumber(inputArray));
+        assertEquals(3, MissingNumberFinder.findMissingNumber(inputArray));
     }
 
     @Test
     void testFindMissingNumber8() {
         int[] inputArray = new int[]{445, 446, 444, 447};
-        assertEquals(448, MissingNumberFinder.findMissingNumber(inputArray));
+        assertEquals(443, MissingNumberFinder.findMissingNumber(inputArray));
+    }
+
+    @Test
+    void testFindMissingNumber9() {
+        int[] inputArray = new int[]{0, 1, 2, 3, 4, 5};
+        assertEquals(6, MissingNumberFinder.findMissingNumber(inputArray));
     }
 }
